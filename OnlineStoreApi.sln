@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreApi", "OnlineStoreApi\OnlineStoreApi.csproj", "{654F1EEB-AC7A-4174-A65B-3C93A6D90CDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStoreApi", "OnlineStoreApi\OnlineStoreApi.csproj", "{654F1EEB-AC7A-4174-A65B-3C93A6D90CDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Interfaces", "Services.Interfaces\Services.Interfaces.csproj", "{FCD5D9FE-3C55-40F6-AC39-ED9A7F1CA671}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Interfaces", "Services.Interfaces\Services.Interfaces.csproj", "{FCD5D9FE-3C55-40F6-AC39-ED9A7F1CA671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Impl", "Services.Impl\Services.Impl.csproj", "{264E7DE7-F1EC-411D-B156-650428481BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Impl", "Services.Impl\Services.Impl.csproj", "{264E7DE7-F1EC-411D-B156-650428481BD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Model", "OnlineStore.Model\OnlineStore.Model.csproj", "{FDA71B99-0C94-4693-A236-7F757DE14D3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Model", "OnlineStore.Model\OnlineStore.Model.csproj", "{FDA71B99-0C94-4693-A236-7F757DE14D3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Repo.Interfaces", "OnlineStore.Repo.Interfaces\OnlineStore.Repo.Interfaces.csproj", "{3E29A6EA-FF36-44B9-A12A-F88C7B740FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Repo.Impl", "OnlineStore.Repo.Impl\OnlineStore.Repo.Impl.csproj", "{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{FDA71B99-0C94-4693-A236-7F757DE14D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDA71B99-0C94-4693-A236-7F757DE14D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDA71B99-0C94-4693-A236-7F757DE14D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E29A6EA-FF36-44B9-A12A-F88C7B740FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E29A6EA-FF36-44B9-A12A-F88C7B740FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E29A6EA-FF36-44B9-A12A-F88C7B740FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E29A6EA-FF36-44B9-A12A-F88C7B740FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
