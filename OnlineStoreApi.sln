@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Repo.Interfaces
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Repo.Impl", "OnlineStore.Repo.Impl\OnlineStore.Repo.Impl.csproj", "{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.DataAccess", "OnlineStore.DataAccess\OnlineStore.DataAccess.csproj", "{1286A775-7ED0-4286-8A6B-D88E5E827294}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4929AC3-E0DD-4CA8-83CB-9D2F4271371C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1286A775-7ED0-4286-8A6B-D88E5E827294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1286A775-7ED0-4286-8A6B-D88E5E827294}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1286A775-7ED0-4286-8A6B-D88E5E827294}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1286A775-7ED0-4286-8A6B-D88E5E827294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
