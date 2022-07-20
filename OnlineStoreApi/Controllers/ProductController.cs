@@ -10,16 +10,21 @@ namespace OnlineStoreApi.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductInterface _productService;
+        private readonly OnlineStoreContext _onlineStoreContext;
 
-        public ProductController(IProductInterface productInterface)
+        public ProductController(IProductInterface productInterface, OnlineStoreContext onlineStoreContext)
         {
             _productService = productInterface;
+            _onlineStoreContext = onlineStoreContext;
         }
 
         [HttpGet("products")]
         public async Task<IActionResult> GetProducts()
         {
-            var result = await _productService.GetProducts();
+            //var result = await _productService.GetProducts();
+            //return Ok(result);
+
+            var result = _onlineStoreContext.Set<Product>().ToList();
             return Ok(result);
         }
 

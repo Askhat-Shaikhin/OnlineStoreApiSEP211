@@ -1,28 +1,30 @@
 ﻿using OnlineStore.Model;
 using OnlineStore.Repo.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OnlineStoreApi;
 
 namespace OnlineStore.Repo.Impl
 {
     public class ProductRepository : IProductRepository
     {
-        public async Task DeleteProduct(int id)
+        private readonly OnlineStoreContext _context;
+
+        public ProductRepository(OnlineStoreContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
         public async Task<Product> GetProductById(int id)
         {
-            throw new NotImplementedException();
+            var product = _context.Set<Product>().FirstOrDefault(x => x.Id == id);
+            return product;
         }
 
         public async Task<List<Product>> GetProducts(int? top = null)
         {
-            throw new NotImplementedException();
+            if (top != null)
+                return _context.Set<Product>().Take((int)top).ToList();
+
+            return _context.Set<Product>().ToList();
         }
 
         public async Task<int> InsertProduct(Product product)
@@ -31,6 +33,11 @@ namespace OnlineStore.Repo.Impl
         }
 
         public async Task UpdateProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task DeleteProduct(int id)
         {
             throw new NotImplementedException();
         }

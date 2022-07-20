@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using OnlineStore.Repo.Interfaces;
 using OnlineStoreApi;
 using Services.Impl;
 using Services.Interfaces;
