@@ -44,7 +44,7 @@ namespace OnlineStore.Repo.Impl
                            (@UserName
                            ,@Email
                            ,@PhoneNumber
-                           ,@Password";
+                           ,@Password)";
             
             var param = new DynamicParameters();
             param.Add("@UserName", user.UserName);
