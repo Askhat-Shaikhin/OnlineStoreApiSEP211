@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OnlineStore.Repo.Impl\OnlineStore.Repo.Impl.csproj" />
     <ProjectReference Include="..\Services.Impl\Services.Impl.csproj" />
   </ItemGroup>
 
